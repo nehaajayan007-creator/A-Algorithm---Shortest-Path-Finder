@@ -1,25 +1,25 @@
 # A*Algorithm---Shortest-Path-Finder
-This project demonstares the A* algorithm to find the shortest path in a grid by combing cost and heuristic functions. It allows users to visualize pathfinding in different scenarios.
+This project demonstrates the A* algorithm to find the shortest path in a grid by combing cost and heuristic functions. It allows users to visualize pathfinding in different scenarios.
 
 # A* Algorithm 
 A command-line implementation of the A* (A-Star) search algorithm — one of the most widely used pathfinding algorithms in Artificial Intelligence. This project demonstrates how A* efficiently finds the shortest path on a 2D grid with obstacles, using a heuristic function (Manhattan Distance) to guide the search.
 
 # What is A*?
 A* is an informed search algorithm that combines:
-g(n) — the actual cost from the start node to node n
-h(n) — a heuristic estimate of the cost from n to the goal
-f(n) = g(n) + h(n) — the total estimated cost
+g(n) — the actual cost from the start node to node n.
+h(n) — a heuristic estimate of the cost from n to the goal.
+f(n) = g(n) + h(n) — the total estimated cost.
 By always expanding the node with the lowest f(n), A* guarantees the shortest path while
 exploring fewer nodes than uninformed algorithms like BFS and DFS.
 
 # Features
-A* pathfinding on a 2D grid
-Manhattan Distance heuristic
-Coloured terminal visualisation (path, walls, explored nodes)
-3 built-in scenarios (Simple, Maze, No-path)
-Custom grid builder (add walls interactively)
-Performance stats — path length, nodes explored, time taken
-Pure Python — no external dependencies
+A* pathfinding on a 2D grid.
+Manhattan Distance heuristic.
+Coloured terminal visualisation (path, walls, explored nodes).
+3 built-in scenarios (Simple, Maze, No-path).
+Custom grid builder (add walls interactively).
+Performance stats — path length, nodes explored, time taken.
+Pure Python — no external dependencies.
 
 # Concepts Covered (AI & ML Syllabus)
 1.Informed Search: A* uses a heuristic function h(n) to guide the search process.
@@ -30,8 +30,9 @@ Pure Python — no external dependencies
 
 # Project Structure
 astar_project/
-|---main.py       #Main program (algorithm + CLI)
-|---README.md     #This file
+|---main.py       #Main program. (algorithm + CLI)
+|---README.md     #This file.
+|---Screenshots   #Contains Output images.
 
 # Requirements
 This project requires Python 3.7 or higher version to run properly.
@@ -52,10 +53,10 @@ Select a number and press Enter. The initial grid is shown, then press Enter aga
 algorithm.
 
 Option 4 — Custom grid
-1. Enter grid size (rows and columns, between 3 and 15)
-2. Enter wall positions one by one as row,col (e.g. 2,3 )
-3. Type done when walls are placed
-4. Enter start and goal positions
+1. Enter grid size (rows and columns, between 3 and 15).
+2. Enter wall positions one by one as row,col (e.g. 2,3 ).
+3. Type done when walls are placed.
+4. Enter start and goal positions.
 
 # Reading the output
 S  - Start position
@@ -78,13 +79,13 @@ Nodes explored : 23
 Time taken : 0.412 ms
 
 # Algorithm Walkthrough
-1. Add the start node to the open list with f = h(start, goal)
+1. Add the start node to the open list with f = h(start, goal).
 2. While the open list is not empty:
-   Pop the node with the lowest f value
-   If it is the goal, reconstruct and return the path
-   Add it to the closed set
+   Pop the node with the lowest f value.
+   If it is the goal, reconstruct and return the path.
+   Add it to the closed set.
    For each valid neighbour:
         Compute g , h , f
-        Add to open list if not already visited with a better cost
-3. If the open list empties with no goal found → no path exists
+        Add to open list if not already visited with a better cost.
+3. If the open list empties with no goal found → no path exists.
 
