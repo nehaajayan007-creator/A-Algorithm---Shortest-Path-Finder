@@ -1,5 +1,5 @@
 # A*Algorithm---Shortest-Path-Finder
-This project demonstrates the A* algorithm to find the shortest path in a grid by combing cost and heuristic functions. It allows users to visualize pathfinding in different scenarios.
+This project demonstrates the A* algorithm to find the shortest path in a grid by combining cost and heuristic functions. It allows users to visualize pathfinding in different scenarios.
 
 # A* Algorithm 
 A command-line implementation of the A* (A-Star) search algorithm — one of the most widely used pathfinding algorithms in Artificial Intelligence. This project demonstrates how A* efficiently finds the shortest path on a 2D grid with obstacles, using a heuristic function (Manhattan Distance) to guide the search.
